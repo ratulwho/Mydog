@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Tasks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="material/css/styles.css">
+    <link rel="stylesheet" href="material/css/styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #000; 
-            color: #fff; 
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
@@ -32,9 +32,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid #000000; 
+            border: 1px solid #000000;
             border-radius: 12px;
-            background-color: #333030; 
+            background-color: #333030;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
             width: 80%;
@@ -77,7 +77,7 @@
         }
 
         .task-button {
-            background-color: #ffffff; 
+            background-color: #ffffff;
             color: rgb(0, 0, 0);
             border: none;
             padding: 10px 20px;
@@ -90,14 +90,16 @@
         .task-button:hover {
             background-color: #a2aaa0;
         }
+
         .tasks.scrollable {
-            max-height: 590px; 
-            overflow-y: auto; 
+            max-height: 590px;
+            overflow-y: auto;
             margin: 20px auto;
-            width: 90%;       
+            width: 90%;
             padding-right: 10px;
-            border: 1px solid #000000; 
+            border: 1px solid #000000;
         }
+
         @media (max-width: 600px) {
             .task-container {
                 max-width: 100%;
@@ -112,47 +114,22 @@
                 font-size: 16px;
             }
         }
-
-
-
-        
     </style>
 </head>
 <body>
-   
-
     <div id="balance-container">
         <h2><b>_____________</b></h2>
-
-        <h2><b> TASKS </b></h2>
-    
-        <span id="balance">0</span>  ðŸ¦´ total dogs
+        <h2><b>TASKS</b></h2>
+        <span id="balance">0</span> 🐾 total dogs
+        <h2><b>_______________</b></h2>
     </div>
-    <h2><b>_______________</b></h2>
 
     <section class="tasks scrollable">
-    <div class="task-container">
-        <div class="task">
-            <div class="task-detail">
-                <div class="task-image">
-                    <img src="material/images/you.gif" width="45px" alt="">
-                </div>
-                <div>
-                    <h4>Subscribe</h4>
-                    <div class="task-data">
-                        <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                        <h5>100</h5>
-                    </div>
-                </div>
-            </div>
-            <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
-        </div>
-    
         <div class="task-container">
             <div class="task">
                 <div class="task-detail">
                     <div class="task-image">
-                        <img src="material/images/tele.png" width="45px" alt="">
+                        <img src="material/images/you.gif" width="45px" alt="You">
                     </div>
                     <div>
                         <h4>Subscribe</h4>
@@ -162,147 +139,87 @@
                         </div>
                     </div>
                 </div>
-                <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
+                <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">🐾 claim</button>
             </div>
-            <div class="task-container">
-                <div class="task">
-                    <div class="task-detail">
-                        <div class="task-image">
-                            <img src="material/images/fa.png" width="45px" alt="">
-                        </div>
-                        <div>
-                            <h4>follow</h4>
-                            <div class="task-data">
-                                <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                <h5>100</h5>
-                            </div>
+        </div>
+
+        <div class="task-container">
+            <div class="task">
+                <div class="task-detail">
+                    <div class="task-image">
+                        <img src="material/images/tele.png" width="45px" alt="Telegram">
+                    </div>
+                    <div>
+                        <h4>Subscribe</h4>
+                        <div class="task-data">
+                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                            <h5>100</h5>
                         </div>
                     </div>
-                    <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
                 </div>
-                <div class="task-container">
-                    <div class="task">
-                        <div class="task-detail">
-                            <div class="task-image">
-                                <img src="material/images/ista.png" width="45px" alt="">
-                            </div>
-                            <div>
-                                <h4>follow</h4>
-                                <div class="task-data">
-                                    <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                    <h5>100</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
+                <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">🐾 claim</button>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <div class="task">
+                <div class="task-detail">
+                    <div class="task-image">
+                        <img src="material/images/fa.png" width="45px" alt="Facebook">
                     </div>
-                    <div class="task-container">
-                        <div class="task">
-                            <div class="task-detail">
-                                <div class="task-image">
-                                    <img src="material/images/you.gif" width="45px" alt="">
-                                </div>
-                                <div>
-                                    <h4>watch video</h4>
-                                    <div class="task-data">
-                                        <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                        <h5>100</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
+                    <div>
+                        <h4>Follow</h4>
+                        <div class="task-data">
+                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                            <h5>100</h5>
                         </div>
+                    </div>
+                </div>
+                <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">🐾 claim</button>
+            </div>
+        </div>
 
-                        <div class="task-container">
-                            <div class="task">
-                                <div class="task-detail">
-                                    <div class="task-image">
-                                        <img src="material/images/tele.png" width="45px" alt="">
-                                    </div>
-                                    <div>
-                                        <h4>Subscribe</h4>
-                                        <div class="task-data">
-                                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                            <h5>100</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
-                            </div>
-                            <div class="task-container">
-                                <div class="task">
-                                    <div class="task-detail">
-                                        <div class="task-image">
-                                            <img src="material/images/fa.png" width="45px" alt="">
-                                        </div>
-                                        <div>
-                                            <h4>follow</h4>
-                                            <div class="task-data">
-                                                <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                                <h5>100</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
-                                </div>
-                                <div class="task-container">
-                                    <div class="task">
-                                        <div class="task-detail">
-                                            <div class="task-image">
-                                                <img src="material/images/ista.png" width="45px" alt="">
-                                            </div>
-                                            <div>
-                                                <h4>follow</h4>
-                                                <div class="task-data">
-                                                    <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                                    <h5>100</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
-                                    </div>
-                                    <div class="task-container">
-                                        <div class="task">
-                                            <div class="task-detail">
-                                                <div class="task-image">
-                                                    <img src="material/images/you.gif" width="45px" alt="">
-                                                </div>
-                                                <div>
-                                                    <h4>watch video</h4>
-                                                    <div class="task-data">
-                                                        <img src="material/images/logo.png" width="20px" alt="Coin Icon">
-                                                        <h5>100</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="task-button" onclick="completeTask(100, 'https://www.youtube.com/@premiumthinking')">ðŸ¦´ claim</button>
-                                        </div>
+        <div class="task-container">
+            <div class="task">
+                <div class="task-detail">
+                    <div class="task-image">
+                        <img src="material/images/ista.png" width="45px" alt="Instagram">
+                    </div>
+                    <div>
+                        <h4>Follow</h4>
+                        <div class="task-data">
+                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                            <h5>100</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="task-button" onclick="completeTask(100, 'https://youtube.com/@premiumthinking')">🐾 claim</button>
+            </div>
+        </div>
+    </section>
 
-                    </section>
-
-
-        <nav class="bottom-nav">
-            <a href="home.html" class="nav-item">
-                <i class="fas fa-home"></i>
-                <span>HOME</span>
-            </a>
-            <a href="leaderboard.html" class="nav-item">
-                <i class="fas fa-trophy"></i>
-                <span>LEADERBOARD</span>
-            </a>
-            <a href="invite-friends.html" class="nav-item">
-                <i class="fas fa-user-friends"></i>
-                <span>FRIENDS</span>
-            </a>
-            <a href="task.html" class="nav-item">
-                <i class="fas fa-tasks"></i>
-                <span>TASKS</span>
-            </a>
-            <a href="balance.html" class="nav-item">
-                <i class="fas fa-wallet"></i>
-                <span>BALANCE</span>
-            </a>
-        </nav>
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>HOME</span>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <i class="fas fa-trophy"></i>
+            <span>LEADERBOARD</span>
+        </a>
+        <a href="invite-friends.html" class="nav-item">
+            <i class="fas fa-user-friends"></i>
+            <span>FRIENDS</span>
+        </a>
+        <a href="task.html" class="nav-item">
+            <i class="fas fa-tasks"></i>
+            <span>TASKS</span>
+        </a>
+        <a href="balance.html" class="nav-item">
+            <i class="fas fa-wallet"></i>
+            <span>BALANCE</span>
+        </a>
+    </nav>
 
     <script src="material/js/js.js"></script>
     <script src="material/js/main.js"></script>
