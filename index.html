@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading...</title>
     <style>
-      
         body, html {
             margin: 0;
             padding: 0;
@@ -13,7 +12,6 @@
             width: 100%;
             overflow: hidden; 
         }
-        
         
         .loading-container {
             display: flex;
@@ -25,6 +23,7 @@
             color: white;
             text-align: center;
             font-family: Arial, sans-serif;
+            transition: opacity 1s ease-out;
         }
         
         .loading-container h1 {
@@ -46,10 +45,14 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        .fade-out {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="loading-container">
+    <div class="loading-container" id="loading-container">
         <div>
             <h1>Loading...</h1>
             <div class="spinner"></div>
@@ -57,10 +60,13 @@
     </div>
 
     <script>
-       
         setTimeout(function() {
-            window.location.href = 'home.html'; 
-        }, 5000);
+            // Adding a fade-out effect before redirection
+            document.getElementById('loading-container').classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = 'home.html'; 
+            }, 1000); // Wait for fade-out transition to finish
+        }, 5000); // Redirection after 5 seconds
     </script>
 </body>
 </html>
