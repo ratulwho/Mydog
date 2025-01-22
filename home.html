@@ -22,12 +22,12 @@
         }
 
         .task-container {
-            margin: 10px auto;
+            margin: 20px auto;
             max-width: 600px;
         }
 
         .task {
-            margin: 10px auto;
+            margin: 10px 0;
             padding: 20px;
             display: flex;
             align-items: center;
@@ -37,7 +37,7 @@
             background-color: #333030; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
-            width: 80%;
+            width: 100%;
         }
 
         .task:hover {
@@ -91,6 +91,27 @@
             background-color: #a2aaa0;
         }
 
+        .coin-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .coin-container img {
+            max-width: 80%;
+        }
+
+        nav.bottom-nav {
+            margin-top: 20px;
+        }
+
+        nav.bottom-nav .nav-item {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
         @media (max-width: 600px) {
             .task-container {
                 max-width: 100%;
@@ -111,12 +132,13 @@
    
     <br><br>
 
-
-    <div id="balance-container"><h2><b></b></h2>
-        <span id="balance">0</span>🦴 total dogs
+    <!-- Balance Section -->
+    <div id="balance-container">
+        <span id="balance">0</span> 🦴 total dogs
     </div>
     <br>
 
+    <!-- Tasks Section -->
     <div class="task-container">
         <div class="task">
             <div class="task-detail">
@@ -124,14 +146,14 @@
                     <img src="material/images/logo.png" width="45px" alt="">
                 </div>
                 <div>
-                    <h4>claim rewards</h4>
+                    <h4>Claim Rewards</h4>
                     <div class="task-data">
                         <img src="material/images/logo.png" width="20px" alt="Coin Icon">
                         <h5>300</h5>
                     </div>
                 </div>
             </div>
-            <button class="task-button" onclick="completeTask(300, 'reword.html')">🦴 claim</button>
+            <button class="task-button" onclick="completeTask(300, 'reword.html')">🦴 Claim</button>
         </div>
 
         <div class="task">
@@ -140,46 +162,45 @@
                     <img src="material/images/logo.png" width="45px" alt="">
                 </div>
                 <div>
-                    <h4>verify and earn</h4>
+                    <h4>Verify and Earn</h4>
                     <div class="task-data">
                         <img src="material/images/logo.png" width="20px" alt="Coin Icon">
                         <h5>200</h5>
                     </div>
                 </div>
             </div>
-            <button class="task-button" onclick="completeTask(200, 'verify.html')">🦴 claim</button>
+            <button class="task-button" onclick="completeTask(200, 'verify.html')">🦴 Claim</button>
         </div>
+    </div>
 
+    <!-- Coin Container (optional, based on your design) -->
+    <div class="coin-container">
+        <img src="material/images/logo.png" width="80%" alt="Coin Image">
+    </div>
 
-
-        <div class="coin-container">
-            <div class="task-image">
-                <img src="material/images/logo.png" width="80%">
-
-               
-
-                <nav class="bottom-nav">
-            <a href="home.html" class="nav-item">
-                <i class="fas fa-home"></i>
-                <span>HOME</span>
-            </a>
-            <a href="leaderboard.html" class="nav-item">
-                <i class="fas fa-trophy"></i>
-                <span>LEADERBOARD</span>
-            </a>
-            <a href="invite-friends.html" class="nav-item">
-                <i class="fas fa-user-friends"></i>
-                <span>FRIENDS</span>
-            </a>
-            <a href="task.html" class="nav-item">
-                <i class="fas fa-tasks"></i>
-                <span>TASKS</span>
-            </a>
-            <a href="balance.html" class="nav-item">
-                <i class="fas fa-wallet"></i>
-                <span>BALANCE</span>
-            </a>
-        </nav>
+    <!-- Navigation -->
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>HOME</span>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <i class="fas fa-trophy"></i>
+            <span>LEADERBOARD</span>
+        </a>
+        <a href="invite-friends.html" class="nav-item">
+            <i class="fas fa-user-friends"></i>
+            <span>FRIENDS</span>
+        </a>
+        <a href="task.html" class="nav-item">
+            <i class="fas fa-tasks"></i>
+            <span>TASKS</span>
+        </a>
+        <a href="balance.html" class="nav-item">
+            <i class="fas fa-wallet"></i>
+            <span>BALANCE</span>
+        </a>
+    </nav>
 
     <script src="material/js/js.js"></script>
     <script src="material/js/main.js"></script>
